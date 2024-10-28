@@ -1,0 +1,13 @@
+/* Footer.css */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #1976d2; /* Couleur primaire */
+}
+
+.footer a:hover {
+    color: #0d47a1; /* Couleur sombre au survol */
+}

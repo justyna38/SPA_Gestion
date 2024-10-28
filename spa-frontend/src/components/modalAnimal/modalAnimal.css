@@ -1,0 +1,38 @@
+.animal-details-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Augmentez le padding pour un rendu plus aéré */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 1000px; /* Augmentez la largeur maximale */
+  margin: auto; /* Centre le modal horizontalement */
+}
+
+.modal-content {
+  display: flex;
+  align-items: flex-start; /* Aligne le contenu en haut */
+  max-width: 100%; /* Assurez-vous que le contenu ne déborde pas */
+}
+
+.animal-image {
+  width: 250px; /* Ajustez la taille de l'image selon vos besoins */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px; /* Espacement entre l'image et le texte */
+}
+
+.animal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.animal-info h2 {
+  margin: 0 0 10px 0; /* Marge entre le titre et le paragraphe */
+}
+
+.animal-info p {
+  margin: 5px 0; /* Marge pour les paragraphes */
+  line-height: 1.5; /* Améliore la lisibilité */
+}

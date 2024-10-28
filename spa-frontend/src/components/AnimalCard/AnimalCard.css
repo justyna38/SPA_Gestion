@@ -1,0 +1,69 @@
+.animalCard {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card {
+  max-width: 250px;
+  max-height: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #e0f7fa, #80deea); /* Dégradé doux */
+  color: #333; /* Couleur du texte principal */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.sos-circle {
+  position: absolute;
+  top: 160px;   
+  left: 2px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff4d4d; /* Couleur rouge vif pour SOS */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.2rem; /* Taille de police augmentée */
+}
+
+.details {
+  font-size: 0.9rem;
+  color: #555; /* Couleur du texte secondaire */
+}
+
+/* Ajout d'une bordure colorée pour les détails */
+.card :hover .details {
+  color: #007BFF; /* Couleur d'accent sur survol */
+  border-bottom: 1px solid #007BFF; /* Bordure colorée */
+}
+
+/* Ajout d'icônes pour le genre */
+.male-icon {
+  color: #2196f3; /* Couleur bleue pour les mâles */
+}
+
+.female-icon {
+  color: #ff69b4; /* Couleur rose pour les femelles */
+}

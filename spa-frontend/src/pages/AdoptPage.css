@@ -1,0 +1,59 @@
+.cardsList {
+    display: flex;
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center; /* Centrer les cartes horizontalement */
+    flex-wrap: wrap; /* Permet de passer sur la ligne suivante si la largeur de l'écran est insuffisante */
+  }
+
+  .container {
+    padding: 16px;
+}
+
+.side-barre-filter {
+    margin-bottom: 16px;
+}
+
+.animalCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 800px;
+    width: 700px;
+}
+
+
+.animal-details-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .side-barre-filter {
+    position: sticky; /* Le filtre reste collé au scroll */
+    top: 0; /* Il devient sticky dès qu'il atteint le haut de la page */
+    
+    overflow-y: auto; /* Si le contenu du filtre dépasse, permettre le scroll à l'intérieur */
+    padding: 20px; /* Pour ajouter un peu d'espace autour */
+    background-color: #f8f8f8; /* Une couleur de fond pour se distinguer */
+  }
+  .animalCards {
+    height: calc(100vh - 150px); /* Ajustez la hauteur en fonction de l'en-tête et de la pagination */
+    overflow-y: auto; /* Permet le défilement des cartes */
+    padding: 20px; /* Pour ajouter de l'espace autour des cartes */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mise en page responsive */
+    gap: 20px; /* Espacement entre les cartes */
+  }
+
+  .loading-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: calc(100vh - 150px); /* Ajustez la hauteur en fonction de votre mise en page */
+  }
